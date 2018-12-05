@@ -8,9 +8,6 @@ import static ee.aoc.FileUtil.readLinesFromFile;
 public class Day1 {
     private static final String fileName = "src/main/resources/1_day_input.txt";
 
-
-
-
     public static int sumFreqChanges(List<String> freqChangesList) {
         return freqChangesList.stream().mapToInt(Integer::parseInt).sum();
     }
