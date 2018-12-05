@@ -1,11 +1,12 @@
-package day2;
+package ee.aoc;
 
 import java.util.List;
 
-import static day1.Solution.readLinesFromFile;
+import static ee.aoc.FileUtil.readLinesFromFile;
 
-public class Solution {
-    private static final String fileName = "src/day2/box_ids.txt";
+
+public class Day2 {
+    private static final String fileName = "src/main/resources/2_day_input.txt";
 
     public static int checkSum(List<String> boxIds) {
         int numIdsWith2Letters = 0;

@@ -1,14 +1,14 @@
-package day5;
+package ee.aoc;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static day1.Solution.readLinesFromFile;
+import static ee.aoc.FileUtil.readLinesFromFile;
 
-public class Solution {
-    private static final String fileName = "src/day5/in.txt";
+public class Day5 {
+    private static final String fileName = "src/main/resources/5_day_input.txt";
 
     public static boolean sameCharDifferentCase(char a, char b) {
         boolean sameChar = Character.toLowerCase(a) == Character.toLowerCase(b);

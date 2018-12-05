@@ -1,12 +1,12 @@
-package day4;
+package ee.aoc;
 
 import java.util.*;
 import java.util.stream.IntStream;
 
-import static day1.Solution.readLinesFromFile;
+import static ee.aoc.FileUtil.readLinesFromFile;
 
-public class Solution {
-    private static final String fileName = "src/day4/sleep_records.txt";
+public class Day4 {
+    private static final String fileName = "src/main/resources/4_day_input.txt";
 
     private static Integer keyWithMaxSum(Map<Integer, int[]> map) {
         Map.Entry<Integer, int[]> maxEntry = null;

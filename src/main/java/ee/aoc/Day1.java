@@ -1,27 +1,15 @@
-package day1;
+package ee.aoc;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
-import java.util.stream.Collectors;
 
-public class Solution {
-    private static final String fileName = "src/day1/frequency_changes.txt";
+import static ee.aoc.FileUtil.readLinesFromFile;
+
+public class Day1 {
+    private static final String fileName = "src/main/resources/1_day_input.txt";
 
 
-    public static List<String> readLinesFromFile (String fileName) {
-        List<String> list = new ArrayList<>();
-        try (BufferedReader br = Files.newBufferedReader(Paths.get(fileName))) {
-            list = br.lines().collect(Collectors.toList());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return list;
-    }
+
 
     public static int sumFreqChanges(List<String> freqChangesList) {
         return freqChangesList.stream().mapToInt(Integer::parseInt).sum();

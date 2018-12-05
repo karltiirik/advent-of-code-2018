@@ -1,11 +1,12 @@
-package day3;
+package ee.aoc;
 
 import java.util.List;
 
-import static day1.Solution.readLinesFromFile;
+import static ee.aoc.FileUtil.readLinesFromFile;
 
-public class Solution {
-    private static final String fileName = "src/day3/claims.txt";
+
+public class Day3 {
+    private static final String fileName = "src/main/resources/3_day_input.txt";
     private static int[][] fabric = new int[1001][1001];
 
     private static void claim(int x, int y, int width, int height) {
