@@ -72,15 +72,11 @@ public class Day4 {
 
         int mostSleptGuardId = keyWithMaxSum(sleepData);
         int mostPopularSleepMinute = mostPopularSleepMinute(sleepData.get(mostSleptGuardId));
-        System.out.println(mostSleptGuardId);
-        System.out.println(mostPopularSleepMinute);
         System.out.println("Answer 1: " + mostPopularSleepMinute * mostSleptGuardId);
 
 
         int mostFreqASleepAtASingleMinute = idMostFreqASleepAtASingleMinute(sleepData);
         int minute = mostPopularSleepMinute(sleepData.get(mostFreqASleepAtASingleMinute));
-        System.out.println(mostFreqASleepAtASingleMinute);
-        System.out.println(minute);
         System.out.println("Answer 2: " + mostFreqASleepAtASingleMinute * minute);
     }
 }

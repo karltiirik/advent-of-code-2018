@@ -61,8 +61,8 @@ public class Day2 {
 
     public static void main(String[] args) {
         List<String> boxIds = readLinesFromFile(fileName);
-        System.out.println(checkSum(boxIds));
-        System.out.println(commonLetters(boxIds));
+        System.out.println("Answer 1: " + checkSum(boxIds));
+        System.out.println("Answer 2" + commonLetters(boxIds));
     }
 
 }

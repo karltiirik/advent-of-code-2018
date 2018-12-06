@@ -30,7 +30,7 @@ public class Day1 {
 
     public static void main(String args[]) {
         List<String> freqChangesList = readLinesFromFile(fileName);
-        System.out.println(sumFreqChanges(freqChangesList));
-        System.out.println(firstFreqReachedTwice(freqChangesList));
+        System.out.println("Answer 1: " + sumFreqChanges(freqChangesList));
+        System.out.println("Answer 2: " + firstFreqReachedTwice(freqChangesList));
     }
 }

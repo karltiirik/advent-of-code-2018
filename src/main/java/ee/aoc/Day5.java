@@ -12,9 +12,7 @@ public class Day5 {
 
     public static boolean sameCharDifferentCase(char a, char b) {
         boolean sameChar = Character.toLowerCase(a) == Character.toLowerCase(b);
-        boolean diffCase = (Character.isLowerCase(a) && Character.isUpperCase(b))||
-                (Character.isUpperCase(a) && Character.isLowerCase(b));
-        return sameChar && diffCase;
+        return sameChar && !(a == b);
     }
 
     public static int removeOppositesSize(List<Character> list) {
@@ -50,7 +48,7 @@ public class Day5 {
 
     public static void main(String[] args) {
         String sleepRecords = readLinesFromFile(fileName).get(0);
-        List<Character> chars = sleepRecords.chars().mapToObj(e->(char)e).collect(Collectors.toList());
+        List<Character> chars = sleepRecords.chars().mapToObj(e -> (char) e).collect(Collectors.toList());
 
         System.out.println("Answer 1: " + removeOppositesSize(chars));
         System.out.println("Answer 2: " + findMinSize(chars));

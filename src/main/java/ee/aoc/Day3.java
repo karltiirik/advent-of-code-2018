@@ -57,7 +57,7 @@ public class Day3 {
             claim(x, y, width, height);
         }
 
-        System.out.println(countOverlaps());
+        System.out.println("Answer 1: " + countOverlaps());
 
         for (String claim : claims) {
             String[] splitLine = claim.split(" ");
@@ -68,7 +68,7 @@ public class Day3 {
             int width = Integer.parseInt(size[0]);
             int height = Integer.parseInt(size[1]);
             if (intact(x, y, width, height)) {
-                System.out.println(splitLine[0].substring(1));
+                System.out.println("Answer 2: " + splitLine[0].substring(1));
                 break;
             }
 
